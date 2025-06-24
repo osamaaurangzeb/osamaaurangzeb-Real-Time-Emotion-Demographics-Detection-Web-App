@@ -42,7 +42,7 @@ Face_Emotions/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/Face_Emotions.git](https://github.com/osamaaurangzeb/osamaaurangzeb-Real-Time-Emotion-Demographics-Detection-Web-App.git
+   git clone https://github.com/osamaaurangzeb/osamaaurangzeb-Real-Time-Emotion-Demographics-Detection-Web-App.git
    cd Face_Emotions/ FlasWebAPP
    ```
 
@@ -51,11 +51,6 @@ Face_Emotions/
    - [pip](https://pip.pypa.io/en/stable/)
    - Recommended: Create a virtual environment
 
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   *(You may need to create a `requirements.txt` with packages such as Flask, tensorflow, keras, opencv-python, numpy, librosa, sounddevice, etc.)*
 
 3. **Download/Place Model Files:**
    - Ensure all `.h5` model files are present in their respective blueprint folders.
