@@ -9,6 +9,20 @@ A multi-modal AI-powered web application for real-time facial emotion detection,
 - **Speech Emotion Recognition:** Records audio and predicts the speaker's emotion (Neutral, Calm, Happy, Sad, Angry, Fearful, Disgust, Surprised).
 - **Modular Flask Architecture:** Organized with blueprints for easy extension and maintenance.
 - **Interactive Web UI:** User-friendly interface for all features.
+  
+# Deep Learning Models & Performance
+1. Facial Emotion Recognition Model
+Architecture: Convolutional Neural Network (CNN) trained on the FER2013 dataset.
+Test Accuracy: 85.96%
+Details: The model achieves high accuracy, outperforming many existing state-of-the-art solutions. It is robust to real-world webcam input and can distinguish between seven basic emotions.
+2. Age & Gender Prediction Model
+Architecture: CNN-based regression and classification model.
+Dataset: Trained on a labeled dataset of facial images with age and gender annotations.
+Performance: The model provides reliable age estimation and gender classification, with Mean Absolute Error (MAE) and classification accuracy evaluated during training (see notebook for details).
+3. Speech Emotion Recognition Model
+Architecture: Deep neural network trained on MFCC features extracted from audio (RAVDESS dataset).
+Test Accuracy: 88.1%
+Details: The model can classify eight different emotions from speech with high accuracy, making it suitable for real-time audio emotion analysis.
 
 ## Project Structure
 
@@ -52,10 +66,7 @@ Face_Emotions/
    - Recommended: Create a virtual environment
 
 
-3. **Download/Place Model Files:**
-   - Ensure all `.h5` model files are present in their respective blueprint folders.
-
-4. **Run the application:**
+3. **Run the application:**
    ```bash
    python app.py
    ```
@@ -79,9 +90,7 @@ Face_Emotions/
 - `blueprints/speech/speech.py`: Handles audio recording and speech emotion prediction.
 - `blueprints/home/home.py`: Renders the home page.
 
-## Screenshots
 
-*(Add screenshots of the web interface and results here)*
 
 ## License
 
